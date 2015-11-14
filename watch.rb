@@ -4,9 +4,9 @@
 
 trap("SIGINT") { exit }
 
-if ARGV.length < 2
-  puts "Usage: #{$0} watch_folder keyword"
-  puts "Example: #{$0} . mywebproject"
+if ARGV.length != 3
+  puts "Usage: #{$0} watch_folder keyword [chrome|safari]"
+  puts "Example: #{$0} ~/Sites mywebproject chrome"
   exit
 end
 
@@ -14,6 +14,7 @@ dev_extension = 'dev'
 filetypes = ['css','html','htm','php','rb','erb','less','js']
 watch_folder = ARGV[0]
 keyword = ARGV[1]
+browser = ARGV[2]
 puts "Watching #{watch_folder} and subfolders for changes in project files..."
 
 while true do
@@ -30,22 +31,8 @@ while true do
 
     diff_hash.each do |df|
       puts "Detected change in #{df[0]}, refreshing"
-      %x{osascript<<ENDGAME
-        	tell application "Safari"
-          	set windowList to every window
-          	repeat with aWindow in windowList
-          		set tabList to every tab of aWindow
-          		repeat with atab in tabList
-          			if (URL of atab contains "#{keyword}") then
-          			  tell atab to do javascript "window.location.reload()"
-          			end if
-          		end repeat
-          	end repeat
-        	end tell
-ENDGAME
-}
+      %x{osascript #{browser}-refresh.scpt "#{keyword}"}
     end
   end
-
   sleep 1
 end
