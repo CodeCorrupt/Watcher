@@ -10,7 +10,6 @@ if ARGV.length != 3
   exit
 end
 
-dev_extension = 'dev'
 filetypes = ['css','html','htm','php','rb','erb','less','js']
 watch_folder = ARGV[0]
 keyword = ARGV[1]
