@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Watcher by CodeCorrupt</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Watcher</h1>
+        <h2>Automatically refresh your browser when a file is changed.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/CodeCorrupt/Watcher/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/CodeCorrupt/Watcher/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/CodeCorrupt/Watcher" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="watcher" class="anchor" href="#watcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>Watcher</h1>
+
+<p>Automatically refresh your browser when a file is changed.</p>
+
+<p>There is a workflow service and a ruby script included in this. They both do the same and the service is just a GUI wrapper for the script.</p>
+
+<p>The script monitors for a file to change in the specified folder. If it sees a change then an embedded apple script is used to refresh the browser of your choosing. You can currently choose between safari and chrome. There is a keyword that is used to identify which browser tabs will be refreshed. i.e. a keyword of "localhost" will only refresh browser pages with "localhost" in the URL.</p>
+
+<p>This program is based on <a href="http://goo.gl/jo469J">a post by Brett Terpstra</a></p>
+
+<h2>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h2>
+
+<h4>
+<a id="service-workflow" class="anchor" href="#service-workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Service (Workflow)</h4>
+
+<p>To install the service simple double click on the Watcher.workflow and select <strong>Install</strong>. </p>
+
+<p>After this you can right click on the folder you want to watch and under <strong>Services</strong> select <strong>Watcher</strong></p>
+
+<h4>
+<a id="ruby-script" class="anchor" href="#ruby-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ruby Script</h4>
+
+<p>To run the ruby script navigate to the install folder and run the following:</p>
+
+<pre><code>./watcher.rb path_to_watch keyword browser
+</code></pre>
+
+<p>Currently the only supported browsers are chrome and safari. both must be entered all lower case.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
