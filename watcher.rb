@@ -5,10 +5,18 @@
 
 trap("SIGINT") { exit }
 
+browsers = ['chrome', 'safari']
+
 if ARGV.length != 3
-  puts "Usage: #{$0} path_to_watch keyword [chrome|safari]"
+  puts "Usage: #{$0} path_to_watch keyword #{browsers}]" 
   puts "Example: #{$0} ~/Sites localhost chrome"
   exit
+end
+
+if ! browsers.include? ARGV[2]
+    puts "Invalid browser. Please select a browser from the list:"
+    puts "    #{browsers}"
+    exit
 end
 
 filetypes = ['css','html','htm','php','rb','erb','less','js']
