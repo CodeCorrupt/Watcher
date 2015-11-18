@@ -149,6 +149,295 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
+							<string>chrome</string>
+						</array>
+					</dict>
+					<key>defaultMessage</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>What Browser are you using: chrome or safari?</string>
+						</array>
+					</dict>
+					<key>requireInput</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Text.action</string>
+				<key>ActionName</key>
+				<string>Ask for Text</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>buttonAffirmative</key>
+					<string>OK</string>
+					<key>buttonNegative</key>
+					<string>Cancel</string>
+					<key>defaultAnswer</key>
+					<string>chrome</string>
+					<key>defaultMessage</key>
+					<string>What Browser are you using: chrome or safari?</string>
+					<key>requireInput</key>
+					<true/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.TextInputDialog</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAskForTextAction</string>
+				<key>IgnoresInput</key>
+				<true/>
+				<key>InputUUID</key>
+				<string>01708590-DEE9-4739-A03A-E4404AAEE96A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Text</string>
+					<string>Ask</string>
+					<string>Prompt</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C6F64F4E-25EF-4B21-953B-42ACB43CA6D2</string>
+				<key>UUID</key>
+				<string>C56FD8EA-6B97-478E-8453-801B80881CF3</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>defaultAnswer</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>OK</string>
+						<key>name</key>
+						<string>buttonAffirmative</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>defaultMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Cancel</string>
+						<key>name</key>
+						<string>buttonNegative</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>requireInput</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>604.000000:358.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>variableUUID</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<false/>
+						<key>selectedVariableUUID</key>
+						<string>5DAA72E7-0F90-46C7-893D-D69CF4427CA3</string>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action</string>
+				<key>ActionName</key>
+				<string>Set Value of Variable</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>variableUUID</key>
+					<string>5DAA72E7-0F90-46C7-893D-D69CF4427CA3</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Set_Value_of_Variable</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>Set_Value_of_Variable</string>
+				<key>InputUUID</key>
+				<string>03D517DA-7882-44E5-8FF1-6908B56A598D</string>
+				<key>Keywords</key>
+				<array>
+					<string>variable</string>
+					<string>binding</string>
+					<string>input</string>
+					<string>output</string>
+					<string>storage</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>991A1022-4E4B-451F-ABC1-719E52B8EEBD</string>
+				<key>UUID</key>
+				<string>3BB713B5-5014-49ED-8C81-E35E96A628CF</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>variableUUID</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>604.000000:464.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>buttonAffirmative</key>
+					<dict/>
+					<key>buttonNegative</key>
+					<dict/>
+					<key>defaultAnswer</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
 							<string>localhost</string>
 						</array>
 					</dict>
@@ -292,7 +581,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>604.000000:410.000000</string>
+				<string>604.000000:646.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -333,6 +622,8 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
+					<key>Optional</key>
+					<true/>
 					<key>Types</key>
 					<array>
 						<string>*</string>
@@ -400,7 +691,117 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>604.000000:513.000000</string>
+				<string>604.000000:749.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>variableUUID</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<false/>
+						<key>selectedVariableUUID</key>
+						<string>5DAA72E7-0F90-46C7-893D-D69CF4427CA3</string>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Value of Variable.action</string>
+				<key>ActionName</key>
+				<string>Get Value of Variable</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>variableUUID</key>
+					<string>5DAA72E7-0F90-46C7-893D-D69CF4427CA3</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Get_Value_of_Variable</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>Get_Value_of_Variable</string>
+				<key>InputUUID</key>
+				<string>113BECFE-8386-4B12-B091-10F1FF758384</string>
+				<key>Keywords</key>
+				<array>
+					<string>variable</string>
+					<string>binding</string>
+					<string>input</string>
+					<string>output</string>
+					<string>storage</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>555B29AE-0420-423E-9452-103944799AA7</string>
+				<key>UUID</key>
+				<string>B540AA16-04FD-4AAD-B70E-9E6799593F9E</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>variableUUID</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>604.000000:852.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -458,45 +859,79 @@
 					<key>COMMAND_STRING</key>
 					<string>trap("SIGINT") { exit }
 
-watch_keyword = ARGV[0]
-ARGV.shift
-watch_folders = ARGV
+browsers = ['chrome', 'safari']
+
+if ARGV.length != 3
+    puts "Usage: #{$0} path_to_watch keyword #{browsers}]" 
+    puts "Example: #{$0} ~/Sites localhost chrome"
+    exit
+end
+
+if ! browsers.include? ARGV[2]
+    puts "Invalid browser. Please select a browser from the list:"
+    puts "    #{browsers}"
+    exit
+end
 
 filetypes = ['css','html','htm','php','rb','erb','less','js']
+watch_folder = ARGV[1]
+keyword = ARGV[0]
+browser = ARGV[2]
+puts "Watching #{watch_folder} and subfolders for changes in project files..."
 
 while true do
-  files = []
-  watch_folders.each {|watch_folder|
+    files = []
     filetypes.each {|type|
-      files += Dir.glob( File.join( watch_folder, "**", "*.#{type}" ) )
-    }
-  }
-  new_hash = files.collect {|f| [ f, File.stat(f).mtime.to_i ] }
-  hash ||= new_hash
-  diff_hash = new_hash - hash
+        files += Dir.glob( File.join( watch_folder, "**", "*.#{type}" ) ) 
+    }   
+    new_hash = files.collect {|f| [ f, File.stat(f).mtime.to_i ] } 
+    hash ||= new_hash
+    diff_hash = new_hash - hash
 
-  unless diff_hash.empty?
-    hash = new_hash
+    unless diff_hash.empty?
+        hash = new_hash
 
-    diff_hash.each do |df|
-      %x{osascript&lt;&lt;ENDGAME
-        	tell application "Safari"
-          	set windowList to every window
-          	repeat with aWindow in windowList
-          		set tabList to every tab of aWindow
-          		repeat with atab in tabList
-          			if (URL of atab contains "#{watch_keyword}") then
-          			  tell atab to do javascript "window.location.reload()"
-          			end if
-          		end repeat
-          	end repeat
-        	end tell
+        diff_hash.each do |df|
+            puts "Detected change in #{df[0]}, refreshing"
+            if browser == "safari"
+                %x{osascript&lt;&lt;ENDGAME
+tell application "/Applications/Safari.app"
+    set windowList to every window
+    repeat with aWindow in windowList
+        set tabList to every tab of aWindow
+        repeat with atab in tabList
+            if (URL of atab contains "#{keyword}") then
+                tell atab to do JavaScript "window.location.reload()"
+            end if
+        end repeat
+    end repeat
+    --activate
+end tell
 ENDGAME
-}
-    end
-  end
+                }
 
-  sleep 1
+            end 
+
+            if browser == "chrome"
+            %x{osascript&lt;&lt;ENDGAME
+tell application "/Applications/Google Chrome.app"
+    set windowList to every window
+    repeat with aWindow in windowList
+        set tabList to every tab of aWindow
+        repeat with atab in tabList
+            if (URL of atab contains "#{keyword}") then
+                execute atab javascript "window.location.reload()"
+            end if
+        end repeat
+    end repeat
+    --activate
+end tell
+ENDGAME
+            }
+            end 
+        end 
+    end 
+    sleep 1
 end</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -610,7 +1045,7 @@ end</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>604.000000:696.000000</string>
+				<string>604.000000:1035.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -620,26 +1055,47 @@ end</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>75F30ED7-A192-4847-9192-B6CB037C2BC3</key>
+		<key>283FA397-247B-4C7B-BCB6-EA3EEEBDA05C</key>
+		<dict>
+			<key>from</key>
+			<string>14942053-472B-481F-8478-718F5ED35345 - 14942053-472B-481F-8478-718F5ED35345</string>
+			<key>to</key>
+			<string>B540AA16-04FD-4AAD-B70E-9E6799593F9E - B540AA16-04FD-4AAD-B70E-9E6799593F9E</string>
+		</dict>
+		<key>34840760-AED7-4411-A215-00573E543CCA</key>
 		<dict>
 			<key>from</key>
 			<string>0B6DB057-85D9-4BCA-89C1-6A81BDDC4906 - 0B6DB057-85D9-4BCA-89C1-6A81BDDC4906</string>
 			<key>to</key>
 			<string>14942053-472B-481F-8478-718F5ED35345 - 14942053-472B-481F-8478-718F5ED35345</string>
 		</dict>
-		<key>8567611C-F92C-4B81-9477-E3DFFEF5C41B</key>
+		<key>46D2FB38-10AC-4A14-8300-4F55475C568B</key>
 		<dict>
 			<key>from</key>
-			<string>14942053-472B-481F-8478-718F5ED35345 - 14942053-472B-481F-8478-718F5ED35345</string>
+			<string>C56FD8EA-6B97-478E-8453-801B80881CF3 - C56FD8EA-6B97-478E-8453-801B80881CF3</string>
+			<key>to</key>
+			<string>3BB713B5-5014-49ED-8C81-E35E96A628CF - 3BB713B5-5014-49ED-8C81-E35E96A628CF</string>
+		</dict>
+		<key>6AA583D1-74CF-42D2-8774-6EBAE492717F</key>
+		<dict>
+			<key>from</key>
+			<string>B540AA16-04FD-4AAD-B70E-9E6799593F9E - B540AA16-04FD-4AAD-B70E-9E6799593F9E</string>
 			<key>to</key>
 			<string>7DE61E42-9FF9-457B-94AF-6FD6C86502A6 - 7DE61E42-9FF9-457B-94AF-6FD6C86502A6</string>
 		</dict>
-		<key>8C8395DB-4374-411E-B462-8B2867566A05</key>
+		<key>6C2D2B51-0B8D-4F26-B364-4D0285FDA6E8</key>
+		<dict>
+			<key>from</key>
+			<string>3BB713B5-5014-49ED-8C81-E35E96A628CF - 3BB713B5-5014-49ED-8C81-E35E96A628CF</string>
+			<key>to</key>
+			<string>0B6DB057-85D9-4BCA-89C1-6A81BDDC4906 - 0B6DB057-85D9-4BCA-89C1-6A81BDDC4906</string>
+		</dict>
+		<key>A6886675-D4EE-4ED3-92E5-DAB238888A07</key>
 		<dict>
 			<key>from</key>
 			<string>08C86BD1-51D0-4FCB-97B9-E344E01A6938 - 08C86BD1-51D0-4FCB-97B9-E344E01A6938</string>
 			<key>to</key>
-			<string>0B6DB057-85D9-4BCA-89C1-6A81BDDC4906 - 0B6DB057-85D9-4BCA-89C1-6A81BDDC4906</string>
+			<string>C56FD8EA-6B97-478E-8453-801B80881CF3 - C56FD8EA-6B97-478E-8453-801B80881CF3</string>
 		</dict>
 	</dict>
 	<key>state</key>
@@ -723,6 +1179,14 @@ end</string>
 			<string>com.apple.Automator.Variable.Storage</string>
 			<key>name</key>
 			<string>folders</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>5DAA72E7-0F90-46C7-893D-D69CF4427CA3</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>browser</string>
 		</dict>
 	</array>
 	<key>workflowMetaData</key>
