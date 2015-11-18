@@ -6,8 +6,8 @@
 trap("SIGINT") { exit }
 
 if ARGV.length != 3
-  puts "Usage: #{$0} watch_folder keyword [chrome|safari]"
-  puts "Example: #{$0} ~/Sites mywebproject chrome"
+  puts "Usage: #{$0} path_to_watch keyword [chrome|safari]"
+  puts "Example: #{$0} ~/Sites localhost chrome"
   exit
 end
 
