@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # watch.rb by Brett Terpstra, 2011 <http://brettterpstra.com>
 # with credit to Carlo Zottmann <https://github.com/carlo/haml-sass-file-watcher>
+# Updated by Tyler Hoyt (CodeCorrupt), Nov 2015 <https://github.com/CodeCorrupt>
 
 trap("SIGINT") { exit }
 
