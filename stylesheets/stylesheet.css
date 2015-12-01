@@ -74,6 +74,14 @@ header h2 {
   margin: 0;
 }
 
+#downloads .paypal {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 9px;
+}
+
 /* Main Content
 */
 
