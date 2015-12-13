@@ -20,3 +20,6 @@ To run the ruby script navigate to the install folder and run the following:
 
 Currently the only supported browsers are chrome and safari. both must be entered all lower case.
 
+## TODO
+Modefy to use git API to track when a file is changed. This will make use of .gitignore so the page is not refreshed from log files
+
